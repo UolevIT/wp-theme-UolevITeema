@@ -1,0 +1,967 @@
+/*
+Theme Name: UolevITeema
+Theme URI: https://uolevit.com
+Author: Jani Alakurtti
+Author URI: https://uolevit.com
+Description: Harjoitus
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: UolevIT
+*/
+
+:root {
+  --red: #389FD9;
+  --dblue: #1070B7;
+  --lblue: #333a56;
+  --gray: #efefef;
+  --black: #000;
+  --gold: #93b833;
+}
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background: var(--dblue);
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--gray);
+}
+h3 {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #049fff;
+}
+p {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 18px;
+  font-family: Montserrat, sans-serif;
+  color: var(--gray);
+}
+.navbar {
+  background-color: var(--gray);
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#nav-korjaus #active-nav {
+  color: var(--dblue);
+}
+#nav-korjaus #active-nav-dropdown {
+  color: var(--dblue);
+}
+.mobilelogo {
+  max-width: 220px;
+}
+#nav-korjaus .nav-fix {
+  color: var(--red);
+  margin-right: 0px;
+  transition: .3s;
+}
+#nav-korjaus .nav-fix-drop a {
+  color: var(--red);
+  transition: .3s;
+}
+#ham-korjaus {
+  background-color: var(--gray);
+  border-color: var(--gray);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("../kuvat/UolevIT_menuburger.svg");
+  width: 60px;
+  height: 60px;
+}
+#nav-korjaus .custom-dropdown a {
+  background-color: var(--gray);
+  color: var(--red);
+  font-size: 18px;
+}
+#nav-korjaus .dropdown-menu {
+  background-color: var(--gray);
+  border-color: transparent;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#showcase .btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  width:256px;
+  border: 0px solid #666;
+  margin: 0.5em 0;
+  /*box-shadow: 0px 16px 10px -10px rgba(0,0,0,0.5);*/
+  box-shadow:0 0 8px rgba(0,0,0,.3);
+  transition: .3s;
+}
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 0px solid #666;
+  margin: 0.5em 0;
+  box-shadow:0 0 8px rgba(0,0,0,.3);
+  font-family: Montserrat, sans-serif;
+  transition: .3s;
+}
+#showcase {
+  min-height: 650px;
+  color: #fff;
+  text-align: center;
+}
+#showcase .bg-image {
+  position: absolute;
+  background: #333
+    url("../kuvat/uolevit-it-ratkaisuja-lapista-rovaniemi.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 768px;
+  z-index: -1;
+  opacity: 0.2;
+}
+#showcase h1 {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+#showcase .content-wrap,
+#section-a .content-wrap,
+#tuntiveloitus .content-wrap {
+  padding: 0 1.5em;
+}
+#main h1 {
+  padding-top: 60px;
+  padding-bottom: 0;
+  background-color: var(--dblue);
+}
+#section-a {
+  background: var(--gray);
+  padding: 2em 1em 1em;
+}
+#section-a h2 {
+  color: var(--dblue);
+}
+#section-a p {
+  color: var(--dblue);
+}
+#section-b {
+  background: var(--gray);
+  padding: 2em 1em 1em;
+  display: flex;
+	justify-content: center;
+}
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#section-b p { /* ETUSIVUN KORTIT KORJATTUNA */
+  padding-top: 0;
+}
+#section-b li {
+  margin-bottom: 1em;
+}
+#section-b .card {
+  border-radius: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
+  /*box-shadow: 0px 18px 10px -10px rgba(0,0,0,0.5);*/
+  box-shadow:0 0 8px rgba(0,0,0,.3);
+  min-width: 255px;
+  max-width: 500px;
+  background-color: var(--dblue);
+  transition: .3s;
+}
+#section-b #www-sivut a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: .3s;
+}
+#section-b .btn {
+  width: 220px;
+  transition: .3s;
+}
+#section-b .card img {
+  border-radius: 10px 10px 0px 0px;
+}
+.card-content {
+  padding: 0.5em;
+  background-color: var(--dblue);
+  color: black;
+}
+#section-b .navbar {
+  background-color: var(--dblue);
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  display: grid;
+  justify-content: center;
+}
+#section-b .custom-toggler .navbar-toggler-icon {  
+  background-image: url("../kuvat/upanddown_uusi_final.svg");
+  width: 80px;
+  height: 80px;
+  background-color: var(--dblue);
+}
+#section-b #ham-korjaus {
+  background-color: var(--dblue);
+  border-color: var(--dblue);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#section-b .referenssilinkki {
+  color: var(--gold);
+  text-decoration: none;
+  transition: .3s;
+}
+#referenssiteksti a{
+  color: var(--gold);
+  text-decoration: none;
+  transition: .3s;
+}
+#section-b h3 {
+  color: var(--gray);
+}
+#section-c {
+  background: #fff;
+  padding: 2em;
+}
+#section-c h2, h3 {
+  color: var(--dblue);
+}
+#section-c p {
+  color: var(--dblue);
+  transition: .3s;
+}
+#section-d .box {
+  padding: 2em 1em 1em;
+  color: #fff;
+  background-color: var(--red);
+}
+#section-d .box:first-child {
+  background: var(--dblue);
+}
+#section-d ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#section-d li {
+  margin-bottom: 1em;
+}
+#section-d .card {
+  border-radius: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
+  /*box-shadow: 0px 18px 10px -10px rgba(0,0,0,0.5);*/
+  box-shadow:0 0 8px rgba(0,0,0,.3);
+}
+#section-d .card img {
+  border-radius: 10px 10px 0px 0px;
+}
+#section-d .card-content {
+  padding: .5em;
+  background-color: white;
+  color: black;
+}
+#section-d a {
+  color: var(--dblue);
+  text-decoration: none;
+  transition: .3s;
+}
+#section-e {
+  padding: 2em 1em 1em;
+  justify-content: center;
+  display: flex;
+  background-color: var(--dblue);
+}
+#section-e p {
+  color: var(--dblue);
+}
+#section-e ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#section-e li {
+  margin-bottom: 1em;
+}
+#section-e .card {
+  border-radius: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
+  /* OMA BOX-SHADOW box-shadow: 0px 18px 10px -10px rgba(0,0,0,0.5); */
+  box-shadow:0 0 8px rgba(0,0,0,.3);
+  min-width: 255px;
+  max-width: 500px;
+  background-color: var(--gray);
+  transition: .3s;
+}
+#section-e .card-content {
+  background-color: var(--gray);
+}
+#section-e .card-title {
+  color: var(--dblue);
+}
+#section-e .card img {
+  border-radius: 10px 10px 0px 0px;
+}
+#section-e .navbar {
+  background-color: var(--gray);
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  display: grid;
+  justify-content: center;
+}
+#section-e .custom-toggler .navbar-toggler-icon {
+  background-image: url("../kuvat/upanddown_uusi_final.svg");
+  width: 80px;
+  height: 80px;
+  background-color: var(--gray);
+}
+#section-e #ham-korjaus {
+  background-color: var(--gray);
+  border-color: var(--gray);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.card-content {
+  padding: .5em;
+  background-color: var(--dblue);
+  color: black;
+}
+#content {
+  width: 100%;
+  background: #fff;
+  max-height: 100px;
+  overflow: hidden;
+  -webkit-transition: max-height 1.7s;
+  -moz-transition: max-height 1.7s;
+  transition: max-height 1.7s;
+  text-align: center;
+}
+#content.open {
+  width: 100%;
+  background: #fff;
+  max-height: 800px;
+  -webkit-transition: max-height 1.7s;
+  -moz-transition: max-height 1.7s;
+  transition: max-height 1.7s;
+}
+.fa-mobile-alt {
+  color: var(--red);
+  transition: .3s;
+}
+.fa-envelope {
+  color: var(--red);
+  transition: .3s;
+}
+#main-footer .fa-mobile-alt {
+  color: var(--dblue);
+  transition: .3s;
+}
+#main-footer .fa-envelope {
+  color: var(--dblue);
+  transition: .3s;
+}
+.fa-youtube {
+  color: var(--dblue);
+  margin: .2em;
+  transition: .3s;
+}
+.fa-html5 {
+  color: var(--dblue);
+  margin: .2em;
+  transition: .3s;
+}
+.fa-css3-alt {
+  color: var(--dblue);
+  margin: .2em;
+  transition: .3s;
+}
+.fa-js-square {
+  color: var(--dblue);
+  margin: .2em;
+  transition: .3s;
+}
+.fa-git-square {
+  color: var(--dblue);
+  margin: .2em;
+  transition: .3s;
+}
+#yhteystiedot .fa-youtube {
+  color: var(--red);
+  margin: .1em;
+  transition: .3s;
+}
+.fa-instagram {
+  color: var(--dblue);
+  margin: .2em;
+  transition: .3s;
+}
+#yhteystiedot .fa-instagram {
+  color: var(--red);
+  margin: .1em;
+  transition: .3s;
+}
+.fa-linkedin {
+  color: var(--red);
+  margin: .1em;
+  transition: .3s;
+}
+.fa-skype {
+  color: var(--red);
+  margin: .1em;
+  transition: .3s;
+}
+.fa-copyright {
+  color: var(--dblue);
+  justify-content: center;
+  transition: .3s;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#hinnasto {
+  background: var(--gray);
+  padding: 2em 1em 1em;
+  display: flex;
+  justify-content: center;
+}
+#hinnasto .btn {
+  transition: .3s;
+}
+#hinnasto h2 {
+  color: var(--dblue);
+}
+#hinnasto ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#hinnasto li {
+  margin-bottom: 1em;
+}
+#hinnasto .card {
+  border-radius: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
+  /* OMA BOX-SHADOW box-shadow: 0px 18px 10px -10px rgba(0,0,0,0.5);*/
+  box-shadow:0 0 8px rgba(0,0,0,.3);
+  min-width: 270px;
+  max-width: 558px;
+  background-color: var(--dblue);
+  transition: .3s;
+}
+#hinnasto .card img {
+  border-radius: 10px 10px 0px 0px;
+}
+#hinnasto .card h2 {
+  color: var(--gray);
+}
+#hinnasto .card h3 {
+  color: var(--gray);
+}
+#hinnasto p {
+  font-size: 16px;
+  padding-top: 0;
+  padding-bottom: .2em;
+}
+#tuntiveloitus {
+  background-color: var(--red);
+  padding: 2em 1em 1em;
+}
+#tuntiveloitus p {
+    max-width: 536px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+#toimialue {
+  background: var(--red);
+  padding: 2em 1em 2em;
+  display: flex;
+  justify-content: center;
+}
+
+#toimialue p {
+  margin-top: 0;
+}
+#main-footer {
+  padding: 2em;
+  background: var(--gray);
+  text-align: center;
+}
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
+#main-footer .row {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#main-footer .container {
+  padding-left: auto;
+}
+#main-footer .container p {
+  padding-left: 10px;
+  font-size: 14px;
+  color: var(--dblue);
+}
+#return-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.fa-angle-up {
+  color: var(--red);
+  transition: .3s;
+}
+.fa-angle-double-down {
+  color: var(--gold);
+  transition: .3s;
+}
+.footerkuvake {
+  padding-left: 9px;
+}
+#tukipalvelut h2 {
+  color: var(--dblue);
+}
+#tukipalvelut p {
+  color: var(--dblue);
+}
+.fa-check {
+  color: var(--gold);
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.fa-circle {
+  color: var(--gold);
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.fa-times {
+  color: #ff6550;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+#cw a{
+  color: var(--gold);
+  text-decoration: none;
+  transition: .3s;
+}
+@media (min-width: 600px) {
+	#showcase .content-wrap p {
+		margin: 0 auto;
+	}
+
+	#showcase p {
+		max-width: 536px;
+    color: var(--gray);
+	}
+  #tuntiveloitus p {
+    max-width: 536px;
+    margin: 0 auto;
+    margin-bottom: 0em;
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+h1 {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--gray);
+}
+.navbar {
+  background-color: var(--gray);
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  display: grid;
+  justify-content: center;
+}
+.mobilelogo {
+  max-width: 567px;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+}
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 35em)) 1fr;
+  }
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+  .box,
+  #main-footer
+   {
+    grid-column: span 2;
+  }
+
+  #section-e ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #section-e li {
+    width: 48%;
+  }
+#main-footer {
+	display: grid;
+	grid: 60px / 33.3% 33.3% 33.3%;
+}
+#main-footer .row {
+	justify-content: center;
+	min-width: 250px;
+}
+}
+
+@media (min-width: 850px) {
+#hinnasto ul {
+    display: flex;
+    justify-content: space-around;
+  }
+#hinnasto li {
+    width: 31%;
+  }
+}
+
+@media (min-width: 931px) {
+    #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #section-b li {
+    width: 31%;
+  }
+}
+
+@media (min-width: 1025px) {
+#showcase {
+  min-height: 768px;
+  color: #fff;
+  text-align: center;
+}
+#showcase .btn:hover {
+  background: var(--red);
+  color: var(--gray);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  /*box-shadow: 0px 16px 12px -12px rgba(0,0,0,0.5);*/
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+#nav-korjaus .nav-fix:hover {
+  color: var(--dblue);
+  margin-right: 0px;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#nav-korjaus .nav-fix-drop a:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#section-b .card:hover {
+  border-radius: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
+  /*box-shadow: 0px 18px 10px -10px rgba(0,0,0,0.5);*/
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  min-width: 255px;
+  max-width: 500px;
+  background-color: var(--dblue);
+  transition: .3s;
+  transform: translateY(-6px);
+}
+#section-b .btn:hover {
+  background: var(--red);
+  color: var(--gray);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+.btn:hover {
+  background: var(--red);
+  color: var(--gray);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  /* box-shadow: 0px 16px 12px -12px rgba(0,0,0,0.5); */
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+#section-b .referenssilinkki:hover {
+  color: var(--red);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#referenssiteksti a:hover{
+  color: var(--red);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#section-b #www-sivut a:hover {
+  color: var(--red);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#section-c a:hover {
+  color: var(--dblue);
+  text-decoration: none;
+}
+#section-c .btn:hover {
+  color: var(--gray);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  /*box-shadow: 0px 16px 12px -12px rgba(0,0,0,0.5);*/
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+#hinnasto .card:hover {
+  border-radius: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
+  /*box-shadow: 0px 18px 10px -10px rgba(0,0,0,0.5);*/
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  min-width: 255px;
+  max-width: 500px;
+  background-color: var(--dblue);
+  transition-duration: .3s;
+  transform: translateY(-6px);
+  transition-timing-function: ease-in-out;
+}
+
+#hinnasto .btn:hover {
+  background-color: var(--red);
+  color: var(--gray);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  /*box-shadow: 0px 16px 12px -12px rgba(0,0,0,0.5);*/
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+#section-d a:hover {
+  color: var(--gray);
+  text-decoration: none;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#section-e .card:hover {
+  border-radius: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
+  /* OMA BOX-SHADOW box-shadow: 0px 18px 10px -10px rgba(0,0,0,0.5); */
+  box-shadow:0 0 8px rgba(0,0,0,.3);
+  min-width: 255px;
+  max-width: 500px;
+  background-color: var(--gray);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  box-shadow:0 14px 32px 0 rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+#section-e a:hover {
+  color: var(--dblue);
+  text-decoration: none;
+}
+.fa-mobile-alt:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+.fa-envelope:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#main-footer .fa-mobile-alt:hover {
+  color: var(--red);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#main-footer .fa-envelope:hover {
+  color: var(--red);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+.fa-youtube:hover {
+  color: var(--gray);
+  transition-duration: .3s;
+  margin: .2em;
+  transition-timing-function: ease-in-out;
+}
+.fa-html5:hover {
+  color: var(--gray);
+  transition-duration: .3s;
+  margin: .2em;
+  transition-timing-function: ease-in-out;
+}
+.fa-css3-alt:hover {
+  color: var(--gray);
+  transition-duration: .3s;
+  margin: .2em;
+  transition-timing-function: ease-in-out;
+}
+.fa-js-square:hover {
+  color: var(--gray);
+  transition-duration: .3s;
+  margin: .2em;
+  transition-timing-function: ease-in-out;
+}
+.fa-git-square:hover {
+  color: var(--gray);
+  transition-duration: .3s;
+  margin: .2em;
+  transition-timing-function: ease-in-out;
+}
+#yhteystiedot .fa-youtube:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  margin: .1em;
+  transition-timing-function: ease-in-out;
+}
+.fa-instagram:hover {
+  color: var(--gray);
+  transition-duration: .3s;
+  margin: .2em;
+  transition-timing-function: ease-in-out;
+}
+#yhteystiedot .fa-instagram:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  margin: .1em;
+  transition-timing-function: ease-in-out;
+}
+.fa-linkedin:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  margin: .1em;
+  transition-timing-function: ease-in-out;
+}
+.fa-skype:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  margin: .1em;
+  transition-timing-function: ease-in-out;
+}
+.fa-copyright:hover {
+  color: var(--red);
+  transition-duration: .3s;
+  justify-content: center;
+  transition-timing-function: ease-in-out;
+}
+.fa-angle-up:hover {
+  color: var(--dblue);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+.fa-angle-double-down:hover {
+  color: var(--red);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#cw a:hover{
+  color: var(--red);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#toimialue {
+  background: none;
+  padding: 2em 1em 2em;
+  display: flex;
+  justify-content: center;
+}
+#toimialue .bg-image {
+  position: absolute;
+  background: #333
+    url("../kuvat/talvimaisema-Ounasvaara-Rovaniemi-Lappi.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 629px;
+  z-index: -1;
+  opacity: 0.3;
+}
+}
